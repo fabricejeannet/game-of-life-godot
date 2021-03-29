@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scripts/grid.gd" type="Script" id=1]
+
+[node name="Grid" type="Node2D"]
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[node name="GridContainer" type="GridContainer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+cell_count = 100
+[connection signal="timeout" from="Timer" to="GridContainer" method="_on_Timer_timeout"]
