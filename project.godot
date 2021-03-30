@@ -17,7 +17,6 @@ _global_script_class_icons={
 
 config/name="game-of-life"
 run/main_scene="res://scenes/Grid.tscn"
-run/disable_stdout=true
 config/icon="res://icon.png"
 
 [editor_plugins]
